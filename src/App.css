@@ -1,0 +1,102 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.styled.css{
+  padding: 20px;
+  margin: 30px;
+}
+
+.styled-table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.styled-table th,
+.styled-table td{
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.styled-table thead{
+  background-color:#f4f4f4 ;
+}
+
+.page-container{
+  border-left: 50px solid #52d2d2;
+  border-right: 50px solid #52d2d2;
+  border-bottom: 50px solid #52d2d2;
+  border-top: 50px solid #52d2d2;
+  padding: 40px;
+}
+
+.headings{
+  text-align: center;
+}
+
+#main{
+  text-align: center;
+  color: white;
+  background-image: url(https://vivekanandcollege.ac.in/images/header-new.png);
+  background-size:1430px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 210px;
+}
+
+.header1{
+  color: rgb(255, 255, 255);
+  background-color: rgb(67, 67, 84);
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header2{
+  margin-left: 20px;
+}
+
+.btn{
+  background-color:#26eb26;
+}
+
