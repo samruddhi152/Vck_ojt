@@ -8,7 +8,7 @@ const Header = () => {
                 <Link to="/about">About <em><em></em></em></Link>
                 <Link to="/contact">Contact <em><em></em></em></Link>
                 <Link to="/courses">Courses <em><em></em></em></Link>
-                <Link to="/admission">Admission <em><em></em></em></Link>
+                <Link to="/admission">Apply now! <em><em></em></em></Link>
             </nav>
         </header> 
     </div>
