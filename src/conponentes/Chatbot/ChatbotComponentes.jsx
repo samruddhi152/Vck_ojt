@@ -1,4 +1,4 @@
-//src/components/Chatbot/ChatbotComponent.jsx
+// / src/components/Chatbot/ChatbotComponent.jsx
 import React, { useState, useEffect, useRef } from "react";
 import { getEmbeddings, cosineSimilarity } from "../../utils/aiService"; // Path adjusted
 import { SIMILARITY_THRESHOLD } from "../../utils/constants"; // Path adjusted
@@ -137,7 +137,7 @@ const ChatbotComponent = () => {
       {!isChatOpen && (
         <button className="chatbot-open-button" onClick={toggleChat}>
           <img
-            src="/Images/operator.png"
+            src="\Images\operator_480.png"
             alt="Chat Icon"
             style={{ width: "100px", height: "auto" }}
           />
@@ -147,8 +147,8 @@ const ChatbotComponent = () => {
         {isChatOpen && (
           <>
             <div className="chatbot-header">
-              <span role="img" aria-label="Chatbot icon">
-                :robot_face:
+              <span role="img" aria-label="chatbot icon">
+                <img src="\Images\operator_480.png" width="30"/>
               </span>
               <h2>Educational Chatbot</h2>
               <button className="chatbot-close-button" onClick={toggleChat}>
@@ -173,7 +173,9 @@ const ChatbotComponent = () => {
               {messages.map((message, index) => (
                 <div key={index} className={`message-row ${message.sender}`}>
                   {message.sender === "bot" && (
-                    <div className="avatar bot-avatar">:robot_face:</div>
+                    <div className="avatar bot-avatar">
+                       <img src="\Images\images.jpeg" width="30"/>
+                    </div>
                   )}
                   <p className={`${message.sender}-message`}>{message.text}</p>
                   {message.sender === "user" && (
@@ -183,7 +185,9 @@ const ChatbotComponent = () => {
               ))}
               {loading && (
                 <div className="message-row bot">
-                  <div className="avatar bot-avatar">:robot_face:</div>
+                  <div className="avatar bot-avatar">
+                    :robot_face:
+                  </div>
                   <p className="bot-message loading-indicator">Typing...</p>
                 </div>
               )}
@@ -217,3 +221,12 @@ const ChatbotComponent = () => {
   );
 };
 export default ChatbotComponent;
+
+
+
+
+
+
+
+
+
